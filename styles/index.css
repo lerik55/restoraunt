@@ -67,7 +67,7 @@ body {
 .hero {
   padding-top: 170px;
   min-height: 100vh;
-  background: url("../images/foto.webp") center/cover no-repeat;
+  background: url("../images/hero/foto.webp") center/cover no-repeat;
 }
 .hero__top {
   display: flex;
