@@ -81,7 +81,7 @@ body {
   font-size: 72px;
   line-height: 1.19;
   font-weight: 400;
-  text-transform: uppercase;
+  text-transform: capitalize;
   margin-bottom: 16px;
 }
 .hero__title span {
@@ -90,4 +90,34 @@ body {
 .hero__text {
   max-width: 596px;
   margin: 0 auto 40px;
+}
+.hero__link {
+  margin-bottom: 70px;
+  background-color: #34c759;
+  border-radius: 43px;
+  padding: 25px 57px;
+  color: black;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contacts {
+  display: flex;
+  gap: 90px;
+  justify-content: center;
+}
+.contacts__item {
+  text-align: center;
+}
+.contacts__title {
+  margin-top: 16px;
+  line-height: 30px;
+  color: #fff;
+}
+.contacts__desc {
+  font-size: 14px;
 }/*# sourceMappingURL=index.css.map */
