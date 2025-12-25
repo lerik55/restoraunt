@@ -111,7 +111,6 @@ body {
   }
 
   &__link {
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -125,36 +124,62 @@ body {
     letter-spacing: 0.02em;
   }
 }
+
 // About
 .about {
+  &__container {
+    padding-block: 90px;
+    border-radius: 6px;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.1);
+    background: rgba(37, 37, 37, 1);
+  }
 
-   &__container {}
+  &__title {
+    margin-bottom: 30px;
+    text-align: center;
+  }
 
-   &__title {}
+  &__text {
+    margin: 0 auto 90px;
+    max-width: 734px;
+    text-align: center;
+  }
 
-   &__text {}
+  &__slider {
+    max-width: 734px;
+    margin: 0 auto;
+  }
 
-   &__slider {}
+  &__slide {
+  }
 
-   &__slide {}
+  &__nav {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #303030;
+  }
 }
 
-.title {}
+.swiper {
+}
 
-.swiper {}
+.swiper-wrapper {
+}
 
-.swiper-wrapper {}
+.swiper-slide {
+}
 
-.swiper-slide {}
+.swiper-button-prev {
+}
 
-.swiper-button-prev {}
+.swiper-button-next {
+}
 
-.swiper-button-next {}
-
-
-// 
-
-
+//
 
 .contacts {
   display: flex;
