@@ -143,12 +143,50 @@ body {
 
   }
 
+  &__wrapper {
+    position: relative;
+    max-width: 981px;
+    margin: 0 auto;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+  }
+
   &__slider {
     max-width: 734px;
     margin: 0 auto;
   }
 
   &__slide {}
+
+  &__nav {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #303030;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 5;
+    transition: all 0.3s;
+    cursor: pointer;
+
+    &:hover {
+      border-color: $green;
+    }
+  }
+
+  &__prev {
+    left: 0;
+  }
+
+  &__next {
+    right: 0;
+    transform: translateY(-50%) rotate(180deg);
+  }
 }
 
 .swiper {}

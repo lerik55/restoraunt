@@ -141,10 +141,44 @@ body {
   margin: 0 auto 90px;
   max-width: 734px;
 }
+.about__wrapper {
+  position: relative;
+  max-width: 981px;
+  margin: 0 auto;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
 .about__slider {
   max-width: 734px;
   margin: 0 auto;
 }
+.about__nav {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #303030;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 5;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.about__nav:hover {
+  border-color: #34c759;
+}
+.about__prev {
+  left: 0;
+}
+.about__next {
+  right: 0;
+  transform: translateY(-50%) rotate(180deg);
+}
+
 .contacts {
   display: flex;
   justify-content: center;
