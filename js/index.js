@@ -10,3 +10,11 @@ const swiper = new Swiper('.about__slider', {
    },
 
 })
+
+const ratingElems = document.querySelectorAll('.dishes__stars')
+
+ratingElems.forEach(item => new Starry(item))
+
+
+
+

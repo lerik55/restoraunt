@@ -1,4 +1,5 @@
 @forward "./reset";
+@forward "./starry.min.css";
 @import url("https://fonts.cdnfonts.com/css/helvetica-neue-55");
 
 [class*="__container"] {
@@ -13,6 +14,7 @@ $text: #a6a6a6;
 
 body {
    background-color: $bg;
+   overflow-x: hidden;
    color: $text;
    font-family: "Helvetica Neue", sans-serif;
 }
@@ -32,9 +34,18 @@ body {
       transform: translate(-50%, -50%);
       z-index: 2;
       color: #d9d9d9;
+      font-weight: 400;
       font-size: 30px;
       line-height: 2;
-      letter-spacing: 0.02em;
+      letter-spacing: 0.2em;
+      text-transform: capitalize;
+   }
+
+   &__line {
+      margin: 0 auto;
+      background-color: $green;
+      width: 60px;
+      height: 2px;
    }
 }
 
@@ -122,7 +133,7 @@ body {
       display: flex;
       justify-content: center;
       align-items: center;
-      transition: all .3s cubic-bezier(.47, 1.64, .41, .8);
+      transition: all 1s cubic-bezier(.37, 1.61, .8, -1);
       margin-bottom: 70px;
       border-radius: 43px;
       background-color: $green;
@@ -241,5 +252,386 @@ body {
 
    &__desc {
       font-size: 14px;
+   }
+}
+
+
+// Work
+
+.work {
+   padding-top: 90px;
+   padding-bottom: 30px;
+
+   &__container {}
+
+   &__title {
+      margin-bottom: 30px;
+
+   }
+
+   &__cards {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+   }
+
+
+   &__card {
+      transition: all .3s;
+      box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.1);
+      border-radius: 6px;
+      background: rgba(37, 37, 37, 1);
+      padding: 24px;
+      width: 100%;
+      max-width: 255px;
+
+
+      &:hover {
+         background-color: $green;
+
+         .work__heading,
+         .work__text {
+            color: #191919;
+         }
+
+         .work__line {
+            background-color: #191919;
+         }
+      }
+   }
+
+   &__heading {
+      transition: all .3s;
+      margin-bottom: 10px;
+      color: #fff;
+      font-size: 22px;
+      line-height: 26px;
+      letter-spacing: -0.28px;
+   }
+
+   &__line {
+      display: block;
+      transition: all .3s;
+      background-color: $green;
+      width: 56px;
+      height: 2px;
+   }
+
+   &__text {
+      transition: all .3s;
+      margin-top: 24px;
+      color: rgba(255, 255, 255, 0.5);
+      font-size: 13px;
+      line-height: 18px;
+      letter-spacing: -0.16px;
+   }
+}
+
+
+// Dishes
+
+
+.dishes {
+   padding-top: 60px;
+
+   &__container {}
+
+   &__title {
+      margin-bottom: 60px;
+   }
+
+   &__cards {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: start;
+      gap: 30px;
+   }
+
+   &__card {
+      box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.1);
+      border-radius: 6px;
+      background: rgba(37, 37, 37, 1);
+      max-width: 350px;
+   }
+
+   &__image {
+      position: relative;
+   }
+
+   &__share {
+      display: flex;
+      position: absolute;
+      top: 24px;
+      right: 24px;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      background-color: rgba(0, 0, 0, 0.3);
+      width: 40px;
+      height: 40px;
+   }
+
+   &__top {
+      margin-bottom: 20px;
+      padding: 30px 30px 0 30px;
+   }
+
+   &__name {
+      color: #D9D9D9;
+      font-size: 32px;
+      line-height: 30px;
+   }
+
+   &__desc {
+      color: #A4A8B2;
+      font-size: 12px;
+      line-height: 16px;
+      letter-spacing: -0.15px;
+   }
+
+   &__text {
+      margin-bottom: 20px;
+      padding: 0 30px;
+      font-size: 13px;
+      letter-spacing: -0.16px;
+   }
+
+   &__footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      padding: 0 30px 24px;
+   }
+
+   &__rating {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+   }
+
+   &__stars {}
+
+   &__count {}
+
+   &__btn {
+      border-radius: 100px;
+      background-color: $green;
+      padding: 0 32px;
+      height: 40px;
+   }
+}
+
+// Chefs
+
+
+.chefs {
+   padding-top: 90px;
+   padding-bottom: 30px;
+
+   &__container {}
+
+   &__title {
+      margin-bottom: 60px;
+   }
+
+   &__items {
+      display: flex;
+      gap: 30px;
+   }
+
+   &__item {}
+
+   &__top {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      margin-bottom: 24px;
+   }
+
+   &__avatar {
+      border-radius: 50%;
+      width: 65px;
+      height: 65px;
+   }
+
+   &__info {}
+
+   &__name {
+      margin-bottom: 6px;
+      color: #fff;
+      font-size: 18px;
+   }
+
+   &__desc {
+      font-size: 12px;
+   }
+
+   &__images {
+      display: flex;
+      gap: 30px;
+
+      img {
+         border-radius: 2px;
+      }
+   }
+}
+
+// Recipes
+
+.recipes {
+   padding-top: 90px;
+   padding-bottom: 30px;
+   color: white;
+
+   &__container {}
+
+   &__title {
+      margin-bottom: 60px;
+   }
+
+   &__row {
+      display: flex;
+      gap: 30px;
+   }
+
+   &__main {
+      display: flex;
+      position: relative;
+      flex-direction: column;
+      align-items: center;
+      background: url('../images/recipes/recipes-main.webp') center / cover no-repeat;
+      padding: 60px 90px;
+      width: 100%;
+      max-width: 540px;
+      min-height: 510px;
+      text-align: center;
+   }
+
+   &__type {
+      margin-bottom: 65px;
+      border-radius: 4px;
+      background-color: rgba(0, 0, 0, 0.3);
+      padding-inline: 16px;
+
+      font-size: 10px;
+      line-height: 25px;
+      letter-spacing: 1.25px;
+      text-transform: uppercase;
+   }
+
+   &__date {
+      margin-bottom: 25px;
+      font-size: 2.142;
+      line-height: 30px;
+   }
+
+   &__heading {
+      margin-bottom: 45px;
+      font-size: 24px;
+      line-height: 1.66;
+   }
+
+   &__author {
+      margin-bottom: 60px;
+      font-size: 14px;
+      line-height: 2.14;
+   }
+
+   &__stats {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+   }
+
+   &__watches {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+   }
+
+   &__comments {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+   }
+
+   &__btn {
+      display: flex;
+      position: absolute;
+      top: 30px;
+      right: 30px;
+      justify-content: center;
+      align-items: center;
+      transition: all .3s;
+      border-radius: 50%;
+      background-color: rgba(0, 0, 0, 0.3);
+      width: 40px;
+      height: 40px;
+
+      &:hover {
+         scale: 1.1;
+         background-color: rgba(0, 0, 0, .7);
+      }
+   }
+
+   &__items {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+   }
+
+   &__item {
+      display: flex;
+      flex-direction: column;
+      border-radius: 6px;
+      background-color: #252525;
+      padding: 30px;
+      min-height: 150px;
+
+      &:nth-child(2) {
+         background: url('../images/recipes/recipes-image.webp') center / cover no-repeat;
+      }
+
+      &_green {
+         background-color: $green;
+         color: #252525;
+
+         svg {
+            fill: black;
+         }
+
+         .recipes__type {
+            background-color: black;
+            color: white;
+         }
+      }
+   }
+
+   &__text {
+      flex-grow: 1;
+   }
+
+   &__footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+   }
+
+   &__col {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+
+      .recipes__type {
+         margin-bottom: 0;
+      }
+   }
+
+   &__clone {
+      display: flex;
+      align-items: center;
+      gap: 16px;
    }
 }
